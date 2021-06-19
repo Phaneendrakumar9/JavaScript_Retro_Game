@@ -6,14 +6,14 @@ It Is designed with Javascript with a retro design......
 Let's imagine your boss has given you the following brief for creating this game:
 
 
-*I want you to create a simple guess the number type game. It should choose a random number between 1 and 100, then challenge
-the player to guess the number in 10 turns. After each turn the player should be told if they are right or wrong — and, if
+*I want you to create a simple guess the number type game. It should choose a random number between 1 and 20, then challenge
+the player to guess the number in 20 turns. After each turn the player should be told if they are right or wrong — and, if
 they are wrong, whether the guess was too low or too high. It should also tell the player what numbers they previously guessed.* The game will end once the player guesses correctly, or once they run out of turns. When the game ends, the player should be given an option to start playing again.
 
 
 ### Steps
-1. Generate a random number between 1 and 100.
-2. Record the turn number the player is on. Start it on 1.
+1. Generate a random number between 1 and 20.
+2. Record the turn number the player is on. Start it on 20.
 3. Provide the player with a way to guess what the number is.
 4. Once a guess has been submitted first record it somewhere so the user can see their previous guesses.
 5. Next, check whether it is the correct number.
@@ -24,7 +24,7 @@ they are wrong, whether the guess was too low or too high. It should also tell t
 7. If it is wrong and the player has turns left:
     1. Tell the player they are wrong.
     2. Allow them to enter another guess.
-    3. Increment the turn number by 1.
+    3. Decrement the turn number by 1.
 8. If it is wrong and the player has no turns left:
     1. Tell the player it is game over.
     2. Stop the player from being able to enter more guesses (this would mess the game up).
