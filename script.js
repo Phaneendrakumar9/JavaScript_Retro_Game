@@ -6,7 +6,6 @@ let highscore = 0;
 
 document.querySelector('.check').addEventListener('click', function () {
   let guess = Number(document.querySelector('.guess').value);
-  console.log(guess);
 
   //IF THERE IS NO NUMBER ENTERED
 
